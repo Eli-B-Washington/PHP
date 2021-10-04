@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+:root {
+    --lightgrey: #bababa;
+    --grey: #8d8d8d;
+    --lightblue: #a6cbeb;
+    --blue:#4c96d7;
+    --charcoal: #3a3a3a;
+    --white: #ffffff;
+    --font-1: 'Zen Dots', cursive;
+    --font-2: 'Lato', sans-serif;
+  }
+
+
+  html{
+    box-sizing: border-box;
+   }
+   
+   *, *:before, *:after{
+    box-sizing: inherit;
+   }
+
+
+  body{
+      font-family: var(--font-1);
+      color: var(--charcoal);
+      background-color: var(--white);
+      background-image: url("../images/checkerboard.jpg");
+      
+      max-width: 1200px;
+      margin: 0 auto;
+      
+  }
+  
+  main{
+    padding: 10px;
+  }
+  h1{
+      font-size:1.6em;   
+  }
+
+  p{
+      font-family: var(--font-2);
+  }
+
+  
+  nav{
+    background-color: var(--charcoal);
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: .9em;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 4px;
+    
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    background-color: var(--blue);
+    color:var(--charcoal);
+  
+  }
+
+
+header p{
+  padding-right:20px;
+  font-weight: bold;
+}
+
+header div{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px 15px 0px;
+}
+
+  header div a{
+    text-decoration: none;
+    color:var(--charcoal);
+  }
+
+  footer{
+      text-align: center;
+      border-top: solid 5px var(--grey);
+      line-height: 1;
+  }
+
+  .uprades div{
+    display: flex;
+  }
+img{
+  max-width: 100%;
+  z-index:0;
+}
+
+.delorean_description{
+color: var(--blue);
+margin-bottom: -20px;
+font-weight: bold;
+font-size: 1.2em;
+}
+.delorean_description ul{
+  list-style-type: none;
+}
+
+
+
+button{
+  background-color: var(--blue);
+  border: solid var(--charcoal) 2px;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 200px;
+  font-size: 1.2em;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: var(--lightblue);
+}
+
+.btn{
+  background-color: var(--blue);
+  border: solid var(--charcoal) 2px;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 200px;
+  font-size: 1.2em;
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color: var(--lightblue);
+}
+
+.upgrades{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5px;
+  padding: 5px;
+  font-size: 1em;
+  
+}
+.upgrades div div{
+  display: grid;
+  flex-direction: column;
+  background-color: var(--blue);
+  border: solid 1px var(--charcoal);
+  margin: auto;
+  max-height: 70px;
+  max-width: 250px;
+  align-content: center;
+}
+
+.upgrades div div img{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: auto;
+  max-height: 60px;
+}
+
+.upgrades div{
+  text-align: center;
+}
+
+.delorean_description h2{
+  padding-left: 40px;
+  margin-bottom: -20px;
+}
+
+.delorean_image{
+  z-index: 0;
+}
+
+.wrapper{
+  background-color:var(--white);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.errorMessage{
+  color: red;
+  font-size: 1.5em;
+}
+
+
+
+#inv-display{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+ }
+ 
+ #inv-display li{
+  margin-bottom: .5em;
+  border: 1px #ccc solid;
+  list-style-type: none;
+  flex: auto;
+  margin-left: 3%;
+  margin-right: 3%;
+  border: 5px var(--charcoal) solid;
+  border-radius: 10px;
+  max-width: 200px;
+  text-align: center;
+  height: 250px;
+  justify-content: space-between;
+  font-size:.75em;
+ }
+
+
+#inv-display li img {
+  max-width: 100%;
+  
+}
+
+ /*Full image*/
+ 
+ 
+ #inv-display-full li{
+  list-style-type: none;
+  
+ }
+
+ .dark{
+ background-color: var(--charcoal);
+ color: var(--white);
+ padding: 1em;
+ }
+
+ .light{
+    background-color: var(--white);
+    padding-left: 1em;
+ }
+
+.imageUploads{
+  list-style-type: none;
+}
+
+
+.reviews ul li{
+  padding: 10px;
+}
+.reviews h2{
+  font-size: 1.4em;
+}
+
+
+
+
+.review-display{
+  list-style-type: none;
+  padding-right: 3%;
+}
+
+
+.review-name{
+  font-weight: bold;
+  font-family: var(--font-2);
+  color: var(--blue);
+  font-size: 1.2em;
+}
+
+.review-text{
+  font-style: italic;
+  margin-top: -10px;
+}
+.review-item{
+  border: solid;
+  margin-top: 15px;
+  margin-bottom:15px;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 5px;
+  
+}
+
+
+.review-form{
+  border: 3px solid;
+  padding: 1%;
+  margin-left: 10%;
+  margin-right:3%;
+  font-size: 1.2em;
+  background-color: var(--lightgrey);
+  
+}
+
+.review-form button{
+  font-size: 1em
+}
+.review-form textarea{
+  width: 100%;
+  height: 100px;
+}
+
+
+
+@media only screen and (min-width: 700px) {
+
+  .review-form{
+    margin-left: 3.4%;
+  }
+
+  .review-display{
+    list-style-type: none;
+  }
+
+
+
+  .wrapper{
+    background-color:var(--white);
+    border: solid 6px var(--blue);
+    border-radius: 10px;
+  }
+  
+
+  .delorean_description h2{
+    padding-left: 40px;
+  }
+
+  .delorean_button{
+    display:flex;
+    flex-direction: column;
+  }
+  .delorean_button button{
+    order: 1;
+    margin: 40px;
+    z-index: 1;
+  }
+  .delorean_button img{
+    order: 2;
+  }
+
+  .delorean_divider{
+    padding:40px;
+    
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .delorean_divider .reviews{
+    order:1;
+    padding-left: 40px;
+  }
+  .delorean_divider .upgrade{
+    padding-left: 20px;
+  }
+  .delorean_image{
+    margin-top:-80px;
+    z-index: 0;
+  }
+  .errorMessage{
+    color: red;
+    font-size: 1.3em;
+  }
+
+  input:required:invalid, input:focus:invalid {
+    color:red;
+   }
+
+   input:required:invalid, input:focus:invalid {
+    background-image: url(/images/invalid.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+   }
+    input:required:valid {
+    background-image: url(/images/valid.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    }
+
+  
+  /* For vehicle display in classification view */
+	#inv-display {
+		flex-flow: row wrap;
+		justify-content: flex-start;
+	}
+
+	   
+	#inv-display div {
+		width: 100%;
+	}
+
+
+ .dark{
+ background-color: var(--charcoal);
+ color: var(--white);
+ padding: 1em;
+ }
+
+ .light{
+    background-color: var(--white);
+    padding-left: 1em;
+ }
+
+ #inv-display-full li{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+ }
+
+#inv-display-full li div{
+  font-size: 1.1em;
+  padding: 10px;
+ }
+
+
+ .thumbnail-image:hover{
+  transform: scale(1.7);
+  cursor: pointer;
+ }
+
+ .full-image{
+  max-width: 100%;
+ }
+
+
+}
